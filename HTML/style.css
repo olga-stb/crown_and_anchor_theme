@@ -9,6 +9,7 @@
   --secondary-color: #2d749d;
   --light-color: #e3effa;
   --dark-color: #201d1d;
+  --contrast-color: #FF8A5B;
   --main-font: "Poppins", sans-serif;
   --decorative--font: "Patua One", serif;
 }
@@ -176,16 +177,16 @@ body {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.main-header .icon-holder {
-  width: calc(var(--index) * 1.2);
-  position: relative;
-}
-
 .main-header .icons-holder {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   padding: 20px 40px;
+}
+
+.main-header .icon-holder {
+  width: calc(var(--index) * 1.2);
+  position: relative;
 }
 
 /* .main-header .icons-holder__icon {
@@ -206,6 +207,31 @@ body {
 
 .main-header .icons-holder__svg_path:hover {
   fill: #2d749d;
+}
+
+.main-header .icon_holder_number {
+  background-color: var(--contrast-color);
+  position: absolute;
+  top: -12px;
+  right: -5px;
+  z-index: 5;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s;
+}
+
+.main-header .icon_holder_number:hover {
+  transform: scale(1.1);
+}
+
+.main-header .icon_holder_number span {
+  font-size: 0.7rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main-footer {
