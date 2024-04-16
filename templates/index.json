@@ -6,6 +6,12 @@
         "ca_main_banner_image": "shopify:\/\/shop_images\/top_banner_bkg.jpg"
       }
     },
+    "ca_welcome_sectoon_QXaNgB": {
+      "type": "ca_welcome_sectoon",
+      "settings": {
+        "ca_logo_image": "shopify:\/\/shop_images\/Crown-and-Anchor-Logo.svg"
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -33,17 +39,11 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
-    },
-    "ca_welcome_sectoon_QXaNgB": {
-      "type": "ca_welcome_sectoon",
-      "settings": {
-        "ca_logo_image": "shopify:\/\/shop_images\/Crown-and-Anchor-Logo.svg"
-      }
     }
   },
   "order": [
     "ca_main_banner_RzBnP6",
-    "featured_collection",
-    "ca_welcome_sectoon_QXaNgB"
+    "ca_welcome_sectoon_QXaNgB",
+    "featured_collection"
   ]
 }
