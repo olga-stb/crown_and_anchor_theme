@@ -1,5 +1,11 @@
 {
   "sections": {
+    "ca_main_banner_RzBnP6": {
+      "type": "ca_main_banner",
+      "settings": {
+        "ca_main_banner_image": "shopify:\/\/shop_images\/top_banner_bkg.jpg"
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -30,6 +36,7 @@
     }
   },
   "order": [
+    "ca_main_banner_RzBnP6",
     "featured_collection"
   ]
 }
