@@ -1,4 +1,10 @@
-<div class="main-banner" style="background-image: url({% if section.settings.ca_main_banner_image != blank %}{{ section.settings.ca_main_banner_image.src | image_url: width: 1548 }}{% else %}{{ 'image' | placeholder_svg_tag }}{% endif %});"></div>
+<div class="main-banner"></div>
+
+<style>
+  .main-banner {
+    background-image: url({% if section.settings.ca_main_banner_image != blank %}{{ section.settings.ca_main_banner_image.src | image_url: width: 1548 }}{% endif %});
+  }
+</style>
 
 {% schema %}
   {
