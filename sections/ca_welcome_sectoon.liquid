@@ -1,0 +1,38 @@
+<div class="welcome-section">
+  <h1>Welcome to</h1>
+  <img
+    class="welcome-section__logo"
+    src="{% if section.settings.ca_logo_image != blank %}{{ section.settings.ca_logo_image.src | image_url: width: 600 }}{% endif %}"
+    alt="Crown and Anchor"
+    height="auto"
+    width="auto" />
+  <p>
+    Crown & Anchor is traditionally played for gambling purposes by sailors in the Royal Navy as well as those in the British merchant and fishing fleets.
+  </p>
+  <p>
+    With a grape growing history dating back to 1838, McLaren Vale was one of the earliest regions settled and developed for grape growing. We sourced fruit from a small block in a single vineyard, hand nurturing the vines then crushing and fermenting in small batches prior to aging for 12 months in new oak barrels. A wine worth gambling on and cellaring for years to come. Fair winds and following seas.
+  </p>
+</div>
+
+
+{% schema %}
+  {
+    "name": "ca_welcome_section",
+    "tag": "div",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "ca_logo_image",
+        "label": "Main Logo Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "CA Welcome Section"
+      }
+    ]
+  }
+{% endschema %}

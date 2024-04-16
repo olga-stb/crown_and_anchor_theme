@@ -1,5 +1,3 @@
-<div class="main-banner"></div>
-
 <style>
   .main-banner {
     background-image: url({% if section.settings.ca_main_banner_image != blank %}{{ section.settings.ca_main_banner_image.src | image_url: width: 1548 }}{% endif %});
@@ -10,6 +8,7 @@
   {
     "name": "ca_main_banner",
     "tag": "div",
+    "class": "main-banner",
     "disabled_on": {
       "groups": ["header", "footer"]
     },
