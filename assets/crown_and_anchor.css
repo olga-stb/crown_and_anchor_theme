@@ -340,11 +340,25 @@ body {
 
 .contact_form_holder .field__input {
   height: 3.5rem;
+  font-size: 1.2rem;
 }
 
 .contact_form_holder .field__label {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
+
+.contact_form_holder .field__input:focus~.field__label,
+.contact_form_holder .field__input:not(:placeholder-shown)~.field__label,
+.contact_form_holder .field__input:-webkit-autofill~.field__label,
+.contact_form_holder .customer .field input:focus~label,
+.contact_form_holder .customer .field input:not(:placeholder-shown)~label,
+.contact_form_holder .customer .field input:-webkit-autofill~label {
+  font-size: 0.6rem;
+  top: calc(var(--inputs-border-width) + 0.6rem);
+  left: calc(var(--inputs-border-width) + 1.8rem);
+  letter-spacing: 0.04rem;
+}
+
 
 .contact_form_holder .contact__button {
   margin-top: 2rem;
