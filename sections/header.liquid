@@ -56,8 +56,8 @@
   <div class="icon-holder">
     {%- if cart != empty -%}
       <div class="icon_holder_number">
-        <span aria-hidden="true">{{ cart.item_count }}</span>
-        <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+        {% comment %} <span aria-hidden="true">{{ cart.item_count }}</span>
+        <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span> {% endcomment %}
       </div>
     {%- endif -%}
     <a href="{{ routes.cart_url }}" title="View Cart">

@@ -1,6 +1,11 @@
 {% comment %}theme-check-disable UndefinedObject{% endcomment %}
 {{ 'section-footer.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .main-footer {
+    background-image: url("{{ 'footer_ellipse.svg' | asset_url }}");
+  }
+</style>
 
 <footer class="footer section-{{ section.id }}-padding main-footer">
 
@@ -12,7 +17,7 @@
       height="auto" />
   </div>
   <div class="main-footer__details">
-    WARNING: Under the Liquor Control Reform Act 1998 it is an offence · To  
+    WARNING: Under the Liquor Control Reform Act 1998 it is an offence · To   
   supply alcohol to a person under the age of 18 years (Penalty exceeds
   $17,000)· For a person under the age of 18 years to purchase or receive
   liquor. (Penalty exceeds $700) Liquor Licence No. 57620445. ABN: 44134

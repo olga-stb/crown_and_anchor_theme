@@ -64,6 +64,7 @@ body {
 
 .welcome-section {
   width: 100%;
+  margin: 20px auto;
   max-width: 700px;
   padding: 0 30px;
 }
@@ -208,12 +209,12 @@ body {
 .main-header .icon_holder_number {
   background-color: var(--ca-contrast-color);
   position: absolute;
-  top: -12px;
-  right: -5px;
+  top: -8px;
+  right: -4px;
   z-index: 5;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   transition: transform 0.3s;
 }
 
@@ -262,15 +263,88 @@ body {
   text-align: center;
 }
 
+.shopify-section {
+  width: 100%;
+}
+
+.main_product_wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main_product_image img {
+  display: block;
+  margin: 0 auto;
+}
+
+.main_product_info {
+  width: 100%;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.main_product_info .product__title h1 {
+  font-family: var(--ca-decorative--font);
+  font-size: 3.5rem;
+}
+
+.main_product_info .product_price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+  letter-spacing: 2px;
+
+}
+
+.main_product_info .price-per-item__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.main_product_info .product-form__submit {
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
 @media screen and (max-width: 1100px) {
   .main-banner {
     min-height: calc(var(--index) * 30);
+  }
+
+  .main_product_info .product__title h1 {
+    font-size: 2.8rem;
   }
 }
 
 @media screen and (max-width: 840px) {
   .main-banner {
     min-height: calc(var(--index) * 25);
+  }
+
+  .main_product_wrapper {
+    width: 96%;
+    padding-top: 90px;
+  }
+
+  .main_product_image {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .main_product_image img {
+    max-height: 600px;
+    width: auto;
+  }
+
+  .main_product_info .product__title h1 {
+    font-size: 2rem;
   }
 }
 
@@ -281,7 +355,6 @@ body {
 
   .main-header .icon-holder {
     width: calc(var(--index) * 2);
-
   }
 
   .welcome-section {
@@ -294,6 +367,25 @@ body {
 
   .main-footer {
     background-size: 300%;
+  }
+
+  .main_product_wrapper {
+    width: 92%;
+    padding-top: 70px;
+    flex-direction: column;
+  }
+
+  .main_product_image {
+    max-width: 100%;
+  }
+
+  .main_product_info {
+    max-width: 100%;
+    padding: 30px 0 0 0;
+  }
+
+  .main_product_info .product__title h1 {
+    font-size: 1.6rem;
   }
 }
 
