@@ -366,6 +366,36 @@ h1.collection-hero__title {
   margin: 20px 0;
 }
 
+.collection_banner_holder {
+  padding-top: 80px;
+  background-color: #fff;
+}
+
+.main_facet_holder .facets__heading {
+  font-size: 1.2rem;
+}
+
+.main_facet_holder .facets__summary {
+  font-size: 1.2rem;
+}
+
+.main_facet_holder .facet-filters__label {
+  font-size: 1.2rem;
+}
+
+.main_facet_holder .facet-filters__sort {
+  font-size: 1.2rem;
+}
+
+.main_facet_holder .product-count__text {
+  font-size: 1.2rem;
+}
+
+.main_facet_holder .button-label {
+  font-size: 1.2rem;
+
+}
+
 @media screen and (max-width: 1100px) {
   .main-banner {
     min-height: calc(var(--index) * 30);
@@ -439,6 +469,15 @@ h1.collection-hero__title {
 
   .main_product_info .product__title h1 {
     font-size: 1.6rem;
+  }
+
+  .collection_banner_holder {
+    padding-top: 60px;
+  }
+
+  .main_cart_holder {
+    padding-top: 70px;
+    padding-bottom: 30px;
   }
 }
 
