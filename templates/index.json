@@ -12,6 +12,12 @@
         "ca_logo_image": "shopify:\/\/shop_images\/Crown-and-Anchor-Logo.svg"
       }
     },
+    "ca_separator_rRibM3": {
+      "type": "ca_separator",
+      "settings": {
+        "ca_separator_image": "shopify:\/\/shop_images\/separator.svg"
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -36,15 +42,14 @@
       "settings": {
         "heading": "Get in touch:",
         "heading_size": "h2",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "color_scheme": "scheme-1"
       }
     }
   },
   "order": [
     "ca_main_banner_RzBnP6",
     "ca_welcome_sectoon_QXaNgB",
+    "ca_separator_rRibM3",
     "featured_collection",
     "contact_form_zQheyz"
   ]
