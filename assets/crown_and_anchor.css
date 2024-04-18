@@ -410,6 +410,17 @@ h1.collection-hero__title {
 
 }
 
+.ca_update_cart_totals {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin: 0 10px;
+}
+
+.ca_update_cart_totals:hover {
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 1100px) {
   .main-banner {
     min-height: calc(var(--index) * 30);
@@ -492,6 +503,10 @@ h1.collection-hero__title {
   .main_cart_holder {
     padding-top: 70px;
     padding-bottom: 30px;
+  }
+
+  .ca_update_cart_totals {
+    align-self: center;
   }
 }
 
