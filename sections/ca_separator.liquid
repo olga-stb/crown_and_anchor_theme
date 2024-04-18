@@ -5,12 +5,6 @@
   width="100"
   height="auto" />
 
-<style>
-  .main-banner {
-    background-image: url({% if section.settings.ca_main_banner_image != blank %}{{ section.settings.ca_main_banner_image.src | image_url: width: 1548 }}{% endif %});
-  }
-</style>
-
 {% schema %}
   {
     "name": "ca_separator",
