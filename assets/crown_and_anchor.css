@@ -286,6 +286,10 @@ body {
   align-items: flex-start;
 }
 
+.main_product_wrapper .product__description {
+  text-align: left;
+}
+
 .main_product_image img {
   display: block;
   margin: 0 auto;
