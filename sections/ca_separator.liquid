@@ -1,0 +1,35 @@
+<img
+  class="separator_icon"
+  src="{% if section.settings.ca_separator_image != blank %}{{ section.settings.ca_separator_image.src | image_url: width: 100 }}{% endif %}"
+  alt="Separator"
+  width="100"
+  height="auto" />
+
+<style>
+  .main-banner {
+    background-image: url({% if section.settings.ca_main_banner_image != blank %}{{ section.settings.ca_main_banner_image.src | image_url: width: 1548 }}{% endif %});
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "ca_separator",
+    "tag": "div",
+    "class": "separator",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "ca_separator_image",
+        "label": "Separator Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "CA Separator"
+      }
+    ]
+  }
+{% endschema %}
